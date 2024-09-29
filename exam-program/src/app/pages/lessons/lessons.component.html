@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Register Lesson</h2>
+  <form (ngSubmit)="addLesson()">
+    <input [(ngModel)]="lesson.lessonCode" name="lessonCode" placeholder="Lesson Code" required />
+    <input [(ngModel)]="lesson.lessonName" name="lessonName" placeholder="Lesson Name" required />
+    <input [(ngModel)]="lesson.classLevel" name="classLevel" placeholder="Class Level" required />
+    <input [(ngModel)]="lesson.teacherFirstName" name="teacherFirstName" placeholder="Teacher First Name" required />
+    <input [(ngModel)]="lesson.teacherLastName" name="teacherLastName" placeholder="Teacher Last Name" required />
+    <button type="submit">Add Lesson</button>
+  </form>
+</div>

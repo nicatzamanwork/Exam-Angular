@@ -1,0 +1,66 @@
+<div class="container">
+    <h2>Summary of All Data</h2>
+  
+    <h3>Lessons</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Lesson Code</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Teacher First Name</th>
+          <th>Teacher Last Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let lesson of lessons">
+          <td>{{ lesson.lessonCode }}</td>
+          <td>{{ lesson.lessonName }}</td>
+          <td>{{ lesson.classLevel }}</td>
+          <td>{{ lesson.teacherFirstName }}</td>
+          <td>{{ lesson.teacherLastName }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h3>Students</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Student Number</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Class Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.studentNumber }}</td>
+          <td>{{ student.firstName }}</td>
+          <td>{{ student.lastName }}</td>
+          <td>{{ student.classNumber }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h3>Exams</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Lesson Code</th>
+          <th>Student Number</th>
+          <th>Exam Date</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let exam of exams">
+          <td>{{ exam.lessonCode }}</td>
+          <td>{{ exam.studentNumber }}</td>
+          <td>{{ exam.examDate }}</td>
+          <td>{{ exam.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

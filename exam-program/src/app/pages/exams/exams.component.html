@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Register Exam</h2>
+    <form (ngSubmit)="addExam()">
+      <input [(ngModel)]="exam.lessonCode" name="lessonCode" placeholder="Lesson Code" required />
+      <input [(ngModel)]="exam.studentNumber" name="studentNumber" placeholder="Student Number" required />
+      <input [(ngModel)]="exam.examDate" name="examDate" type="date" placeholder="Exam Date" required />
+      <input [(ngModel)]="exam.price" name="price" type="number" placeholder="Price" required />
+      <button type="submit">Add Exam</button>
+    </form>
+  </div>
+  
